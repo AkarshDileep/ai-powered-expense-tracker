@@ -1,0 +1,2 @@
+﻿# ai-powered-daily-finance-manager
+

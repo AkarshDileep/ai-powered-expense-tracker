@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "riseup",
+    "slug": "riseup",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.akarshhh.miniproject",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.akarshhh.miniproject"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0139e8b1-a9cb-4564-b245-183adb38d865"
+      }
+    },
+    "owner": "akarshh"
+  },
+  "ScrollView horizontal contentContainerStyle={styles.weekGraph}": {
+    "days": [
+      {
+        "dayHeights": [
+          {
+            "height": "height",
+            "backgroundColor": "clickedDay === index ? '#ffcc00' : '#f6f4f4'"
+          }
+        ],
+        "onPress": "handleClick(index)",
+        "dayText": "Day {index + 1}"
+      }
+    ]
+  }
+}
